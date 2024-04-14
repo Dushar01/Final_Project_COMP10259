@@ -1,0 +1,14 @@
+$color: yellow;
+$hovercolor: #fff;
+$btnbcolor: red;
+
+
+.header .nav ul li a{
+    color: $color;
+}
+.header .nav ul li a:hover{
+    color: $hovercolor;
+}
+#under{
+    background-color: $btnbcolor;
+}

@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Write your species name under the title -->
+	<title>   </title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="contactborder.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="new.css">
+	<link rel="stylesheet" href="btn.css;//">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  var prevScrollpos = window.pageYOffset;
+  $(window).scroll(function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      $(".navbar").css("top", "0");
+    } else {
+      $(".navbar").css("top", "-50px"); /* Adjust this value according to your navbar height */
+    }
+    prevScrollpos = currentScrollPos;
+  });
+});
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = $(".mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+
+  $(".prev").click(function() {
+    slideIndex -= 2;
+    showSlides();
+  });
+
+  $(".next").click(function() {
+    showSlides();
+  });
+});
+</script>
+<!-- Header Start -->
+<header class="header">
+	<div class="container">
+		<div class="row justify-content-between align-items-center">
+			<div class="fish-name">
+                <!-- Write your species name under the anchor tag -->
+				<a href="index.html">   </a>
+			</div>
+	 <div class="nav-toggle">
+	   <span></span>
+	 </div>
+			<nav class="nav">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#predators">Prey & Predators</a></li>
+					<li><a href="#gallery" target="_blank">Gallery</a></li>
+					<li><a href="#count">World Count</a></li>
+                    <li><a href="honesty.html" target="_blank">Honesty Declaration</a></li>
+					<li><a href="contactus.html" target="_blank">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<!-- Header End -->
+
+<div id="fish1">
+    <img src="media/bluemarlin1.jpg" alt="Blue Marlin" class="fish">
+</div>
+<h1 class="h1">Blue Marlin</h1>
+
+<div>
+	<img src="media/clouds png.png" alt="" id="clouds">
+</div>
+<div>
+	<img src="media/clouds png.png" alt="" class="clouds1">
+</div>
+<div>
+	<img src="media/butter-removebg-preview.png" alt="" class="clouds">
+</div>
+<div>
+	<img src="media/butter-removebg-preview.png" alt="" class="butter">
+</div>
+
+</div>
+<div id="btn">
+    <a href="http://127.0.0.1:5500/index.html#about" id="under">Read More</a>
+</div>
+
+
+
+<!-- Home Section Start -->
+<section class="home-section" id="home">
+	
+</section>
+<!-- Home Section End -->
+
+<div id="skel1">
+    <img src="media/skeleton marlin.jpg" alt="" class="skel">
+</div>
+
+
+<!-- About Section Start -->
+
+<section class="about-section" id="about">
+    <div id="about">
+        <p>Long bills that protrude from the front of this species' heads are its most distinctive feature. By slashing their heads side to side, blue marlin use this bill to shock their prey, rendering them unconscious and making them simpler to catch. The blue marlin's bill is round and pointed, as opposed to flat and blunt, like that of the sailfish and swordfish. Blue marlin, like many other bony fish found in the open ocean, begin life as minuscule larvae, measuring no more than a few millimeters in length and weighing only a few hundredths of a gram. They have a bill that is readily seen shortly after hatching. Blue marlin develop quickly, and throughout the course of their lives, they may gain as least a million times their body weight.Among the biggest, swiftest, and most identifiable fish in the world are blue marlins. This large fish sticks out in a large ocean thanks to its spear-shaped upper mouth and azure blue and silvery white bodies.
+			From birth, this amazing predator leads a solitary existence. When the mother deposits her eggs in the open, the eggs float along without any parental supervision until they hatch. From that point on, the fish lives alone in the warm surface waters of the Atlantic, Pacific, and Indian oceans for the majority of its life, far from land. They have a great swimming ability and will travel hundreds or even thousands of miles along warm ocean currents.Although they have been known to descend down to savor squid, blue marlins typically feed on the top where the water is warm. Blue marlins slit their top jaw as they swim through dense schools of tuna and mackerel at full speed in search of prey. They go back to the school to eat their stunned victims.
+		</p>
+    </div>
+	<div>
+		<h2 style="margin-top: 10px;">Apperance</h2>
+		<ul id="list">
+			<li>The top of blue marlin is a rich cobalt blue color, while the underside is silvery white.</li>	
+			<li>They have a long, spear-shaped upper mouth (bill) and a prominent dorsal fin.</li>
+		</ul>
+		<h2 style="margin-top:10px ;">Biology</h2>
+		<ul id="list">
+			<li>A blue marlin can reach lengths of over 12 feet and weights of up to 2,000 pounds.</li>
+			<li>Blue marlin females can live up to 20 years and become larger than males.</li>
+			<li>Blue marlin males can grow up to seven feet long and have a ten-year lifespan.</li>
+			<li>In their first year or two of existence, they can grow up to 6 feet tall.</li>
+			<li>Females mature between the ages of three and four, whereas boys mature around the age of two.</li>
+			<li>From May to September, blue marlin reproduce.</li>
+			<li>Their main food sources are open-water species like tuna.</li>
+		</ul>
+	</div>
+	<div id="facts">
+		<h2 id="facts1">Blue Marlin Facts</h2>
+	</div>
+
+	<ol id="list">
+		<li>Scientific name: Makaira nigricans</li>
+		<li>Found globally in tropical and warm temperate ocean waters</li>
+		<li>Unlike white marlin, which have rounded dorsal and anal fins, blue marlin have tall, anteriorly pointed dorsal fins and similarly pointed anals.</li>
+		<li>Unlike black marlin, whose pectoral fins remain stiff, the pectoral fins of a marlin can be folded along the body. </li>
+		<li>The colors of the fish is characterized by dark blue above the lateral line and silver/white below. It also frequently has black dots on the blue dorsal fin and vertical stripes of azure blue or purple. </li>
+		<li>When they hatch from eggs, marlin are little fish that grow quickly every year.</li>
+		<li>Paolo Amorim caught the largest Atlantic blue marlin (IGFA record) in 1992 at Vitoria, Brazil, weighing 1,402 pounds.</li>
+		<li>Jay de Beaubien caught the largest Pacific blue marlin (IGFA record) in 1982 at Kona, Hawaii, weighing 1,376 pounds. </li>
+		<li>Commercial fisheries and anglers who have not followed IGFA regulations have captured far larger species of blue marlin. </li>
+		<li>Male blue marlin seldom weigh more over 200 pounds, and all of the larger ones are female.</li>
+		<li>Granders are blue marlin over a thousand pounds in weight.</li>
+	</ol>
+	<div>
+		<img src="media/classification.png" alt="" class="vs1">
+	</div>
+
+	<div>
+		<img src="media/marlin-vs-swordfish.jpg" alt="" class="vs">
+		<div>
+			<video src="media/yt5s.io-Huge Blue Marlin Jumping.mp4" class="video" controls ></video>
+	</div>
+    
+	
+</section>
+<!-- About Section End -->
+
+<!-- Prey & Predators Section Start -->
+<section class="predators-section" id="predators">
+	
+</section>
+<!-- Prey & Predators Section End -->
+
+<!-- Gallery Section Start -->
+
+<section class="gallery-section" id="gallery">
+	<span class="close" onclick="closeSlideshow()">&times;</span>
+	<div class="gallery">
+		<div class="image">
+		  <img src="media/gallery1.jpg" alt="Image 1" class="img1">
+		</div>
+		<div class="image">
+		  <img src="media/gallery2.png" alt="Image 2" class="img2">
+		</div>
+		<div class="image">
+		  <img src="media/gallery3.png" alt="Image 3" class="img3">
+		</div>
+		<div class="image">
+			<img src="media/gallery4.jpg" alt="Image 3" class="img4">
+		  </div>
+		  <div class="image">
+			<img src="media/gallery5.jpg" alt="Image 3" class="img5	">
+		  </div>
+		  <a class="prev">&#10094;</a>
+  		  <a class="next">&#10095;</a>
+	</div>
+	
+</section>
+<!-- Gallery Section End --> 
+
+<!-- World Count Section Start -->
+ <section class="count-section" id="count">
+   
+</section>
+<!-- World Count Section End -->
+
+
+ <!-- Write your name under the para tag -->
+<p class="copyright">&copy; 2022 _______ Org.</p>
+
+</body>
+</html>

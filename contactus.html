@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<style>
+  .error {
+    color: red;
+  }
+</style>
+<script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="contactborder.css">
+
+
+</head>
+<body>
+
+<div class="hero">
+    <form id="contactForm" action="https://formspree.io/f/xayrlnpe" method="POST">
+        <div class="input-group">
+          <input type="text" id="firstName" name="firstName" required>
+          <label for="firstName">First Name:</label>
+          <span id="firstNameError" class="error"></span>
+        </div>
+        <div class="input-group">
+          <input type="text" id="lastName" name="lastName" required>
+          <label for="lastName">Last Name:</label>
+          <span id="lastNameError" class="error"></span>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" name="email" required>
+          <label for="email">Email:</label>
+          <span id="emailError" class="error"></span>
+        </div>
+        <div class="input-group">
+          <input type="text" id="date" name="date" required>
+          <label for="date">Date(dd/mm/yyy):</label>
+          <span id="dateError" class="error"></span>
+        </div>
+        <div class="input-group">
+          <input type="text" id="phone" name="phone" required>
+          <label for="phone">Phone:</label>
+          <span id="phoneError" class="error"></span>
+        </div>
+        <div class="input-group">
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <label for="message">Message:</label>
+          <span id="messageError" class="error"></span>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+</div>
+
+
+
+<script>
+  const form = document.getElementById('contactForm');
+  const firstName = document.getElementById('firstName');
+  const lastName = document.getElementById('lastName');
+  const email = document.getElementById('email');
+  const date = document.getElementById('date');
+  const phone = document.getElementById('phone');
+  const message = document.getElementById('message');
+
+  form.addEventListener('submit', function(event) {
+    let valid = true;
+
+    if (firstName.value.length < 5) {
+      document.getElementById('firstNameError').textContent = 'First name should be at least 5 characters.';
+      valid = false;
+    } else {
+      document.getElementById('firstNameError').textContent = '';
+    }
+
+    if (lastName.value.length < 5) {
+      document.getElementById('lastNameError').textContent = 'Last name should be at least 5 characters.';
+      valid = false;
+    } else {
+      document.getElementById('lastNameError').textContent = '';
+    }
+
+    if (!email.value.includes('@')) {
+      document.getElementById('emailError').textContent = 'Email should contain @.';
+      valid = false;
+    } else {
+      document.getElementById('emailError').textContent = '';
+    }
+
+    const datePattern = /^\d{2}\/\d{2}\/\d{4}$/;
+    if (!datePattern.test(date.value)) {
+      document.getElementById('dateError').textContent = 'Date must be in dd/mm/yyyy format.';
+      valid = false;
+    } else {
+      document.getElementById('dateError').textContent = '';
+    }
+
+    const phonePattern = /^\d{10}$/;
+    if (!phonePattern.test(phone.value)) {
+      document.getElementById('phoneError').textContent = 'Phone must contain 10 digits.';
+      valid = false;
+    } else {
+      document.getElementById('phoneError').textContent = '';
+    }
+
+    if (message.value.length < 50) {
+      document.getElementById('messageError').textContent = 'Message must be at least 50 characters.';
+      valid = false;
+    } else {
+      document.getElementById('messageError').textContent = '';
+    }
+
+    if (!valid) {
+      event.preventDefault();
+    }
+  });
+</script>
+
+</body>
+</html>
+
+    
+</body>
+</html>

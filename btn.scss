@@ -1,0 +1,4 @@
+$font: to-upper-case($string: "");
+#under::after{
+    font-style: $font;
+}
